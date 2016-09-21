@@ -17,15 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="V3Z-4K-gMD">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o58-kM-bkl">
+                                <color key="backgroundColor" red="1" green="0.37647058820000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="0.90588235289999997" green="0.36078431370000003" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o58-kM-bkl" secondAttribute="trailing" id="Qwn-Ur-A0f"/>
+                            <constraint firstItem="o58-kM-bkl" firstAttribute="leading" secondItem="V3Z-4K-gMD" secondAttribute="leading" id="bdN-Cc-IUn"/>
+                            <constraint firstItem="o58-kM-bkl" firstAttribute="top" secondItem="f2k-XT-kg1" secondAttribute="bottom" constant="35" id="q8i-Ho-YDN"/>
+                            <constraint firstItem="N7L-DJ-icn" firstAttribute="top" secondItem="o58-kM-bkl" secondAttribute="bottom" id="r59-zC-XfN"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="foot_home" selectedImage="foot_home_sel" id="x3y-ex-Xx5"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="scrollContainer" destination="o58-kM-bkl" id="Y8W-K6-dVm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fiy-sz-ATX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-676" y="1062"/>
+            <point key="canvasLocation" x="-804" y="1047"/>
         </scene>
     </scenes>
     <resources>

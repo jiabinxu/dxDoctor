@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A32ADBC31D8F7CF700FA5F8A /* DXSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32ADBC21D8F7CF700FA5F8A /* DXSegmentView.swift */; };
-		A32ADBC51D8F86F800FA5F8A /* DXHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32ADBC41D8F86F800FA5F8A /* DXHomeVC.swift */; };
+		A332370C1D90BD20004302D2 /* DXHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332370B1D90BD20004302D2 /* DXHomeVC.swift */; };
+		A332370E1D90E119004302D2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332370D1D90E119004302D2 /* UIView+Extension.swift */; };
 		A378CCA41D8E770800A9B4C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378CCA31D8E770800A9B4C5 /* AppDelegate.swift */; };
 		A378CCAB1D8E770800A9B4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A378CCAA1D8E770800A9B4C5 /* Assets.xcassets */; };
 		A378CCAE1D8E770800A9B4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A378CCAC1D8E770800A9B4C5 /* LaunchScreen.storyboard */; };
@@ -43,7 +44,8 @@
 
 /* Begin PBXFileReference section */
 		A32ADBC21D8F7CF700FA5F8A /* DXSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXSegmentView.swift; sourceTree = "<group>"; };
-		A32ADBC41D8F86F800FA5F8A /* DXHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeVC.swift; sourceTree = "<group>"; };
+		A332370B1D90BD20004302D2 /* DXHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeVC.swift; sourceTree = "<group>"; };
+		A332370D1D90E119004302D2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A378CCA01D8E770800A9B4C5 /* DXDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A378CCA31D8E770800A9B4C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		A378CCAA1D8E770800A9B4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				A32ADBC21D8F7CF700FA5F8A /* DXSegmentView.swift */,
+				A332370D1D90E119004302D2 /* UIView+Extension.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -287,8 +290,8 @@
 		A378CCE81D8E78B400A9B4C5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A332370B1D90BD20004302D2 /* DXHomeVC.swift */,
 				A378CD001D8EB61D00A9B4C5 /* Home.storyboard */,
-				A32ADBC41D8F86F800FA5F8A /* DXHomeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,11 +494,12 @@
 				A378CCFF1D8EB5C200A9B4C5 /* DXMacros.swift in Sources */,
 				A378CD0F1D8EB7D200A9B4C5 /* DXSearchListCell.swift in Sources */,
 				A32ADBC31D8F7CF700FA5F8A /* DXSegmentView.swift in Sources */,
+				A332370E1D90E119004302D2 /* UIView+Extension.swift in Sources */,
 				A378CD131D8EB96800A9B4C5 /* DXSearchListVc.swift in Sources */,
 				A378CCF01D8E80A200A9B4C5 /* DXTabBarVc.swift in Sources */,
 				A378CD0E1D8EB7D200A9B4C5 /* DXCollectionHeader.swift in Sources */,
 				A378CCA41D8E770800A9B4C5 /* AppDelegate.swift in Sources */,
-				A32ADBC51D8F86F800FA5F8A /* DXHomeVC.swift in Sources */,
+				A332370C1D90BD20004302D2 /* DXHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
