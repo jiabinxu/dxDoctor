@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ta7-RW-bfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-688" y="364"/>
+            <point key="canvasLocation" x="-686" y="184"/>
         </scene>
         <!--Tab Bar Vc-->
         <scene sceneID="cwl-BC-rNq">
@@ -35,24 +35,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="KIi-Yl-JFC" kind="relationship" relationship="viewControllers" id="a9K-36-BQb"/>
-                        <segue destination="phe-RI-ZZD" kind="relationship" relationship="viewControllers" id="bTe-uc-aTR"/>
-                        <segue destination="R6T-mR-afp" kind="relationship" relationship="viewControllers" id="RGs-hI-68V"/>
+                        <segue destination="049-hO-VcC" kind="relationship" relationship="viewControllers" id="wXI-Wv-GTr"/>
+                        <segue destination="phe-RI-ZZD" kind="relationship" relationship="viewControllers" id="Kfv-zB-3kr"/>
+                        <segue destination="R6T-mR-afp" kind="relationship" relationship="viewControllers" id="p1U-ak-EmT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZN-oP-HIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110" y="196"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="9cE-Nr-HoT">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="KIi-Yl-JFC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XyK-Bm-Af6"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U96-zc-inh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-617" y="898"/>
+            <point key="canvasLocation" x="158" y="184"/>
         </scene>
         <!--News-->
         <scene sceneID="YvJ-EN-eyM">
@@ -64,11 +54,52 @@
             </objects>
             <point key="canvasLocation" x="795" y="906"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="odE-Ua-6es">
+            <objects>
+                <viewController id="049-hO-VcC" customClass="DXHomeVC" customModule="DXDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TA5-xE-JMh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wd4-f2-zDL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xOe-dw-05x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQe-6v-ns7" customClass="TransitionSegmentView" customModule="DXDoctor" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.37647058820000001" blue="0.6230324074074074" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PLZ-Ik-GGO"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rC-l3-9DW"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wd4-f2-zDL" firstAttribute="top" secondItem="5rC-l3-9DW" secondAttribute="bottom" id="08y-Hw-hUO"/>
+                            <constraint firstItem="MQe-6v-ns7" firstAttribute="top" secondItem="TA5-xE-JMh" secondAttribute="bottom" id="9Oz-YU-pxA"/>
+                            <constraint firstAttribute="trailing" secondItem="5rC-l3-9DW" secondAttribute="trailing" id="ARQ-AZ-cHm"/>
+                            <constraint firstItem="5rC-l3-9DW" firstAttribute="top" secondItem="MQe-6v-ns7" secondAttribute="bottom" id="SGa-wM-Fr3"/>
+                            <constraint firstItem="MQe-6v-ns7" firstAttribute="leading" secondItem="xOe-dw-05x" secondAttribute="leading" id="ehZ-aE-zxc"/>
+                            <constraint firstItem="5rC-l3-9DW" firstAttribute="leading" secondItem="xOe-dw-05x" secondAttribute="leading" id="hJr-0e-qMc"/>
+                            <constraint firstAttribute="trailing" secondItem="MQe-6v-ns7" secondAttribute="trailing" id="iOh-9q-O8z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="1uM-Ct-QlS"/>
+                    <connections>
+                        <outlet property="scrollContainer" destination="5rC-l3-9DW" id="UA4-rk-KRD"/>
+                        <outlet property="segmentView" destination="MQe-6v-ns7" id="TIm-Rk-KZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHd-Bu-Qyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="1128"/>
+        </scene>
         <!--搜索-->
         <scene sceneID="QAH-xN-67U">
             <objects>
                 <collectionViewController id="phe-RI-ZZD" customClass="DXSearchListVc" customModule="DXDoctor" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1Ck-jg-1At">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="1Ck-jg-1At">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

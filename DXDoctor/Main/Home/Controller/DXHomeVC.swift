@@ -8,41 +8,60 @@
 
 import UIKit
 
-class DXHomeVC: UIViewController,UIScrollViewDelegate{
+import Alamofire
+import SwiftyJSON
 
-    
-    
+
+class DXHomeVC: UIViewController{
+   
+    @IBOutlet weak var segmentView: TransitionSegmentView!
     @IBOutlet weak var scrollContainer: UIScrollView!
     
-    var segmentView:DXSegmentView?
+//    var segmentView:TransitionSegmentView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        self.configSegment()
+        
+        self.configScrollview()
 
+//        self.automaticallyAdjustsScrollViewInsets = false
+        
+
+    }
+
+
+    
+    func configSegment()  {
+        
         let titles:[String] = ["推荐","专题","真相","两性","不孕不育","一图读懂","肿瘤","慢病","营养","母婴"]
         
-        segmentView = DXSegmentView.init(frame: CGRect(x:0,y:64,width:screenWidth,height:35), titles: titles)
-        segmentView?.textFont = 10
+
+        let configure = SegmentConfigure(textSelColor:UIColor.white, highlightColor:UIColor.green,titles:titles)
         
-        segmentView?.backgroundColor = UIColor.yellow
+        segmentView.configure = configure
         
         segmentView?.setScrollClosure(tempClosure: { (index) in
             
             let point = CGPoint(x:CGFloat(index)*screenWidth,y:0)
             self.scrollContainer.setContentOffset(point, animated: true)
-//            scrollContainer.setContentOffset(CGPoint(x:float(index)*screenWidth,y:0), animated: true)
+            
         })
         
+    }
 
-        
-        self.view.addSubview(segmentView!)
-        
+
+    func configScrollview()  {
         
         for index in 0...9 {
             
-            let vc: UIViewController = UIViewController.init()
-            vc.view.frame = CGRect(x:CGFloat(index)*screenWidth,y:35,width:scrollContainer.bounds.width,height:scrollContainer.bounds.height)
-            
+            let vc = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "DXHomeCollectionVc") as! DXHomeCollectionVc
+
+            vc.view.backgroundColor = UIColor.red
+            vc.view?.frame = CGRect(x:CGFloat(index)*screenWidth,y:0,width:scrollContainer.width,height:scrollContainer.height)
+
+            scrollContainer.addSubview(vc.view!)
             self.addChildViewController(vc)
             
         }
@@ -50,19 +69,23 @@ class DXHomeVC: UIViewController,UIScrollViewDelegate{
         scrollContainer.showsHorizontalScrollIndicator = true
         scrollContainer.delegate = self
         scrollContainer.isPagingEnabled = true
-        
-        // Do any additional setup after loading the view.
+        scrollContainer.backgroundColor = UIColor.black
+        self.automaticallyAdjustsScrollViewInsets = true
+     
     }
-
-
     
+
+}
+
+
+extension DXHomeVC:UIScrollViewDelegate{
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let point = scrollView.contentOffset
-
+        
         segmentView?.segmentWillMove(point: point)
-
+        
         
     }
     
@@ -80,7 +103,5 @@ class DXHomeVC: UIViewController,UIScrollViewDelegate{
         
         segmentView?.segmentDidEndMove(point: point)
     }
-
-    
-
 }
+

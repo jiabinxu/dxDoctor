@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A32ADBC31D8F7CF700FA5F8A /* DXSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32ADBC21D8F7CF700FA5F8A /* DXSegmentView.swift */; };
+		5DF0991AC486DEF1262A05BA /* Pods_DXDoctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E86F13053386254FABF59E3 /* Pods_DXDoctor.framework */; };
+		A326168C1D96808A0034C231 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326168B1D96808A0034C231 /* VC1.swift */; };
 		A332370C1D90BD20004302D2 /* DXHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332370B1D90BD20004302D2 /* DXHomeVC.swift */; };
 		A332370E1D90E119004302D2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332370D1D90E119004302D2 /* UIView+Extension.swift */; };
+		A33ADE431D93B7FE00FE9AE0 /* DXHomeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ADE421D93B7FE00FE9AE0 /* DXHomeListVC.swift */; };
+		A33ADE451D93C86100FE9AE0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ADE441D93C86100FE9AE0 /* ListItem.swift */; };
+		A33ADE471D93C87900FE9AE0 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ADE461D93C87900FE9AE0 /* Author.swift */; };
+		A378B7691D94BC25002510FA /* DXHomeCollectionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378B7681D94BC25002510FA /* DXHomeCollectionVc.swift */; };
+		A378B7781D94D10A002510FA /* TransitionSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378B7771D94D10A002510FA /* TransitionSegmentView.swift */; };
 		A378CCA41D8E770800A9B4C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378CCA31D8E770800A9B4C5 /* AppDelegate.swift */; };
 		A378CCAB1D8E770800A9B4C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A378CCAA1D8E770800A9B4C5 /* Assets.xcassets */; };
 		A378CCAE1D8E770800A9B4C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A378CCAC1D8E770800A9B4C5 /* LaunchScreen.storyboard */; };
@@ -23,6 +29,7 @@
 		A378CD0F1D8EB7D200A9B4C5 /* DXSearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378CD0D1D8EB7D200A9B4C5 /* DXSearchListCell.swift */; };
 		A378CD111D8EB8F000A9B4C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A378CD101D8EB8F000A9B4C5 /* Main.storyboard */; };
 		A378CD131D8EB96800A9B4C5 /* DXSearchListVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378CD121D8EB96800A9B4C5 /* DXSearchListVc.swift */; };
+		A38CB4751D93B44300109A82 /* DXHomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38CB4741D93B44300109A82 /* DXHomeListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A32ADBC21D8F7CF700FA5F8A /* DXSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXSegmentView.swift; sourceTree = "<group>"; };
+		7E86F13053386254FABF59E3 /* Pods_DXDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXDoctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A326168B1D96808A0034C231 /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		A332370B1D90BD20004302D2 /* DXHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeVC.swift; sourceTree = "<group>"; };
 		A332370D1D90E119004302D2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A33ADE421D93B7FE00FE9AE0 /* DXHomeListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeListVC.swift; sourceTree = "<group>"; };
+		A33ADE441D93C86100FE9AE0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		A33ADE461D93C87900FE9AE0 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		A356AF0B1D964E5000D9DAC9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		A356AF0C1D964E5000D9DAC9 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "Pods/../build/Debug-iphoneos/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		A356AF0D1D964E5000D9DAC9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		A378B7681D94BC25002510FA /* DXHomeCollectionVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeCollectionVc.swift; sourceTree = "<group>"; };
+		A378B7771D94D10A002510FA /* TransitionSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSegmentView.swift; sourceTree = "<group>"; };
 		A378CCA01D8E770800A9B4C5 /* DXDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A378CCA31D8E770800A9B4C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		A378CCAA1D8E770800A9B4C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +81,9 @@
 		A378CD0D1D8EB7D200A9B4C5 /* DXSearchListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXSearchListCell.swift; sourceTree = "<group>"; };
 		A378CD101D8EB8F000A9B4C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A378CD121D8EB96800A9B4C5 /* DXSearchListVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXSearchListVc.swift; sourceTree = "<group>"; };
+		A38CB4741D93B44300109A82 /* DXHomeListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeListCell.swift; sourceTree = "<group>"; };
+		C0033393B81959E56A014C3B /* Pods-DXDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXDoctor.release.xcconfig"; path = "Pods/Target Support Files/Pods-DXDoctor/Pods-DXDoctor.release.xcconfig"; sourceTree = "<group>"; };
+		C3C95856219EF828C38E866C /* Pods-DXDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXDoctor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DXDoctor/Pods-DXDoctor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF0991AC486DEF1262A05BA /* Pods_DXDoctor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +112,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5794A01920F03F378823EC56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A356AF0B1D964E5000D9DAC9 /* Alamofire.framework */,
+				A356AF0C1D964E5000D9DAC9 /* Kingfisher.framework */,
+				A356AF0D1D964E5000D9DAC9 /* SwiftyJSON.framework */,
+				7E86F13053386254FABF59E3 /* Pods_DXDoctor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A378CC971D8E770800A9B4C5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +130,8 @@
 				A378CCB71D8E770800A9B4C5 /* DXDoctorTests */,
 				A378CCC21D8E770800A9B4C5 /* DXDoctorUITests */,
 				A378CCA11D8E770800A9B4C5 /* Products */,
+				E8FF12F4E270C7EFA662DDEA /* Pods */,
+				5794A01920F03F378823EC56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,7 +219,7 @@
 		A378CCD61D8E784400A9B4C5 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				A32ADBC21D8F7CF700FA5F8A /* DXSegmentView.swift */,
+				A378B7771D94D10A002510FA /* TransitionSegmentView.swift */,
 				A332370D1D90E119004302D2 /* UIView+Extension.swift */,
 			);
 			path = Tool;
@@ -276,6 +309,7 @@
 		A378CCE61D8E78B400A9B4C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A38CB4741D93B44300109A82 /* DXHomeListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +317,8 @@
 		A378CCE71D8E78B400A9B4C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A33ADE441D93C86100FE9AE0 /* ListItem.swift */,
+				A33ADE461D93C87900FE9AE0 /* Author.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +327,8 @@
 			isa = PBXGroup;
 			children = (
 				A332370B1D90BD20004302D2 /* DXHomeVC.swift */,
+				A378B7681D94BC25002510FA /* DXHomeCollectionVc.swift */,
+				A33ADE421D93B7FE00FE9AE0 /* DXHomeListVC.swift */,
 				A378CD001D8EB61D00A9B4C5 /* Home.storyboard */,
 			);
 			path = Controller;
@@ -314,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				A378CD021D8EB64A00A9B4C5 /* News.storyboard */,
+				A326168B1D96808A0034C231 /* VC1.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -352,6 +391,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E8FF12F4E270C7EFA662DDEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3C95856219EF828C38E866C /* Pods-DXDoctor.debug.xcconfig */,
+				C0033393B81959E56A014C3B /* Pods-DXDoctor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,9 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A378CCC81D8E770800A9B4C5 /* Build configuration list for PBXNativeTarget "DXDoctor" */;
 			buildPhases = (
+				428BEF99080DEDDA7289C88A /* [CP] Check Pods Manifest.lock */,
 				A378CC9C1D8E770800A9B4C5 /* Sources */,
 				A378CC9D1D8E770800A9B4C5 /* Frameworks */,
 				A378CC9E1D8E770800A9B4C5 /* Resources */,
+				46DE729420AC0D50A599C173 /* [CP] Embed Pods Frameworks */,
+				62CBE8F842A31C34A11BF641 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -486,19 +537,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		428BEF99080DEDDA7289C88A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46DE729420AC0D50A599C173 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DXDoctor/Pods-DXDoctor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62CBE8F842A31C34A11BF641 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DXDoctor/Pods-DXDoctor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A378CC9C1D8E770800A9B4C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33ADE451D93C86100FE9AE0 /* ListItem.swift in Sources */,
 				A378CCFF1D8EB5C200A9B4C5 /* DXMacros.swift in Sources */,
 				A378CD0F1D8EB7D200A9B4C5 /* DXSearchListCell.swift in Sources */,
-				A32ADBC31D8F7CF700FA5F8A /* DXSegmentView.swift in Sources */,
+				A33ADE431D93B7FE00FE9AE0 /* DXHomeListVC.swift in Sources */,
 				A332370E1D90E119004302D2 /* UIView+Extension.swift in Sources */,
 				A378CD131D8EB96800A9B4C5 /* DXSearchListVc.swift in Sources */,
+				A378B7691D94BC25002510FA /* DXHomeCollectionVc.swift in Sources */,
+				A378B7781D94D10A002510FA /* TransitionSegmentView.swift in Sources */,
 				A378CCF01D8E80A200A9B4C5 /* DXTabBarVc.swift in Sources */,
 				A378CD0E1D8EB7D200A9B4C5 /* DXCollectionHeader.swift in Sources */,
+				A33ADE471D93C87900FE9AE0 /* Author.swift in Sources */,
 				A378CCA41D8E770800A9B4C5 /* AppDelegate.swift in Sources */,
+				A326168C1D96808A0034C231 /* VC1.swift in Sources */,
+				A38CB4751D93B44300109A82 /* DXHomeListCell.swift in Sources */,
 				A332370C1D90BD20004302D2 /* DXHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,6 +670,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -615,6 +721,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -642,9 +749,12 @@
 		};
 		A378CCC91D8E770800A9B4C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C95856219EF828C38E866C /* Pods-DXDoctor.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MJK46JU63A;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DXDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.DXDoctor;
@@ -655,9 +765,12 @@
 		};
 		A378CCCA1D8E770800A9B4C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0033393B81959E56A014C3B /* Pods-DXDoctor.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MJK46JU63A;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DXDoctor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xu.test.DXDoctor;
