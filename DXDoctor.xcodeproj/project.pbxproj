@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5DF0991AC486DEF1262A05BA /* Pods_DXDoctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E86F13053386254FABF59E3 /* Pods_DXDoctor.framework */; };
+		A31D78921DACE4FB0077ABF7 /* DXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31D78911DACE4FB0077ABF7 /* DXExtension.swift */; };
 		A326168C1D96808A0034C231 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326168B1D96808A0034C231 /* VC1.swift */; };
 		A332370C1D90BD20004302D2 /* DXHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332370B1D90BD20004302D2 /* DXHomeVC.swift */; };
 		A332370E1D90E119004302D2 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A332370D1D90E119004302D2 /* UIView+Extension.swift */; };
-		A33ADE431D93B7FE00FE9AE0 /* DXHomeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ADE421D93B7FE00FE9AE0 /* DXHomeListVC.swift */; };
 		A33ADE451D93C86100FE9AE0 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ADE441D93C86100FE9AE0 /* ListItem.swift */; };
 		A33ADE471D93C87900FE9AE0 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33ADE461D93C87900FE9AE0 /* Author.swift */; };
 		A378B7691D94BC25002510FA /* DXHomeCollectionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378B7681D94BC25002510FA /* DXHomeCollectionVc.swift */; };
@@ -30,6 +30,7 @@
 		A378CD111D8EB8F000A9B4C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A378CD101D8EB8F000A9B4C5 /* Main.storyboard */; };
 		A378CD131D8EB96800A9B4C5 /* DXSearchListVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378CD121D8EB96800A9B4C5 /* DXSearchListVc.swift */; };
 		A38CB4751D93B44300109A82 /* DXHomeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38CB4741D93B44300109A82 /* DXHomeListCell.swift */; };
+		A3FE4DEE1D98D051008FE2F5 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FE4DED1D98D051008FE2F5 /* Then.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +52,10 @@
 
 /* Begin PBXFileReference section */
 		7E86F13053386254FABF59E3 /* Pods_DXDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXDoctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31D78911DACE4FB0077ABF7 /* DXExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXExtension.swift; sourceTree = "<group>"; };
 		A326168B1D96808A0034C231 /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		A332370B1D90BD20004302D2 /* DXHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeVC.swift; sourceTree = "<group>"; };
 		A332370D1D90E119004302D2 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		A33ADE421D93B7FE00FE9AE0 /* DXHomeListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeListVC.swift; sourceTree = "<group>"; };
 		A33ADE441D93C86100FE9AE0 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		A33ADE461D93C87900FE9AE0 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		A356AF0B1D964E5000D9DAC9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		A378CD101D8EB8F000A9B4C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A378CD121D8EB96800A9B4C5 /* DXSearchListVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXSearchListVc.swift; sourceTree = "<group>"; };
 		A38CB4741D93B44300109A82 /* DXHomeListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXHomeListCell.swift; sourceTree = "<group>"; };
+		A3FE4DED1D98D051008FE2F5 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		C0033393B81959E56A014C3B /* Pods-DXDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXDoctor.release.xcconfig"; path = "Pods/Target Support Files/Pods-DXDoctor/Pods-DXDoctor.release.xcconfig"; sourceTree = "<group>"; };
 		C3C95856219EF828C38E866C /* Pods-DXDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXDoctor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DXDoctor/Pods-DXDoctor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 		A378CCD21D8E784400A9B4C5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A31D78911DACE4FB0077ABF7 /* DXExtension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			children = (
 				A378B7771D94D10A002510FA /* TransitionSegmentView.swift */,
 				A332370D1D90E119004302D2 /* UIView+Extension.swift */,
+				A3FE4DED1D98D051008FE2F5 /* Then.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -328,7 +332,6 @@
 			children = (
 				A332370B1D90BD20004302D2 /* DXHomeVC.swift */,
 				A378B7681D94BC25002510FA /* DXHomeCollectionVc.swift */,
-				A33ADE421D93B7FE00FE9AE0 /* DXHomeListVC.swift */,
 				A378CD001D8EB61D00A9B4C5 /* Home.storyboard */,
 			);
 			path = Controller;
@@ -593,9 +596,9 @@
 				A33ADE451D93C86100FE9AE0 /* ListItem.swift in Sources */,
 				A378CCFF1D8EB5C200A9B4C5 /* DXMacros.swift in Sources */,
 				A378CD0F1D8EB7D200A9B4C5 /* DXSearchListCell.swift in Sources */,
-				A33ADE431D93B7FE00FE9AE0 /* DXHomeListVC.swift in Sources */,
 				A332370E1D90E119004302D2 /* UIView+Extension.swift in Sources */,
 				A378CD131D8EB96800A9B4C5 /* DXSearchListVc.swift in Sources */,
+				A31D78921DACE4FB0077ABF7 /* DXExtension.swift in Sources */,
 				A378B7691D94BC25002510FA /* DXHomeCollectionVc.swift in Sources */,
 				A378B7781D94D10A002510FA /* TransitionSegmentView.swift in Sources */,
 				A378CCF01D8E80A200A9B4C5 /* DXTabBarVc.swift in Sources */,
@@ -604,6 +607,7 @@
 				A378CCA41D8E770800A9B4C5 /* AppDelegate.swift in Sources */,
 				A326168C1D96808A0034C231 /* VC1.swift in Sources */,
 				A38CB4751D93B44300109A82 /* DXHomeListCell.swift in Sources */,
+				A3FE4DEE1D98D051008FE2F5 /* Then.swift in Sources */,
 				A332370C1D90BD20004302D2 /* DXHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

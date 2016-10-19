@@ -26,8 +26,10 @@ struct SegmentConfigure {
 
 class TransitionSegmentView: UIView {
 
+    
     var configure: SegmentConfigure!
-  
+    
+
     typealias SegmentClosureType = (Int)->Void
     
     //闭包回调方法

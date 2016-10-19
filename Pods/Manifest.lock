@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.0.0)
+  - IBAnimatable (3.0)
+  - Kingfisher (3.1.0)
+  - SwiftyJSON (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - IBAnimatable
+  - Kingfisher (~> 3.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  IBAnimatable: 5ac8e4c9f879e1840041362e41f7728bbbf16b35
+  Kingfisher: 7779f22e977393e9533a89a9685beb8f679d3767
+  SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
+
+PODFILE CHECKSUM: 1bebce79beb486f34d0801be2cd647465bebadc6
+
+COCOAPODS: 1.0.1
